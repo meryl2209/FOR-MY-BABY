@@ -1,0 +1,497 @@
+/* ===========================
+        GENERAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+}
+
+/* Hide sections until JS shows them */
+
+.hidden{
+    display:none;
+}
+
+
+/* ===========================
+      LOADING SCREEN
+=========================== */
+
+#loading-screen{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    background:#0d0d0d;
+}
+
+#loading-screen h1{
+
+    color:#ff5c93;
+    margin-bottom:30px;
+
+}
+
+.progress-bar{
+
+    width:320px;
+    height:20px;
+
+    border:2px solid #ff5c93;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+#progress{
+
+    width:0%;
+
+    height:100%;
+
+    background:#ff5c93;
+
+}
+
+#loading-text{
+
+    margin-top:20px;
+
+    color:#ffb3cc;
+
+}
+
+
+/* ===========================
+      PASSWORD PAGE
+=========================== */
+
+#password-page{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+#password-page h1{
+
+    color:#ff5c93;
+
+    margin-bottom:15px;
+
+}
+
+#password-page input{
+
+    width:250px;
+
+    padding:12px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+#password-page button{
+
+    padding:12px 30px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ff5c93;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+#password-page button:hover{
+
+    transform:scale(1.1);
+
+    background:#ff2f73;
+
+}
+
+
+/* ===========================
+         HOME
+=========================== */
+
+.home{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.home h1{
+
+    font-size:65px;
+
+    color:#ff5c93;
+
+}
+
+.home h2{
+
+    margin:20px;
+
+    color:#ffd3e2;
+
+}
+
+.home p{
+
+    width:60%;
+
+    line-height:30px;
+
+}
+
+.home button{
+
+    margin-top:40px;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ff5c93;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.home button:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+/* ===========================
+         SECTION
+=========================== */
+
+section{
+
+    padding:100px;
+
+    min-height:100vh;
+
+}
+
+
+/* ===========================
+        TIMELINE
+=========================== */
+
+.timeline{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.box{
+
+    background:#1d1d1d;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    transition:.5s;
+
+    border:1px solid #ff5c93;
+
+}
+
+.box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 20px #ff5c93;
+
+}
+
+
+/* ===========================
+      GALLERY
+=========================== */
+
+.slider{
+
+    width:700px;
+
+    max-width:100%;
+
+    margin:auto;
+
+    margin-top:40px;
+
+}
+
+.slider img{
+
+    width:100%;
+
+    border-radius:20px;
+
+}
+
+.buttons{
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+.buttons button{
+
+    padding:12px 30px;
+
+    margin:10px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ff5c93;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+/* ===========================
+      REASON CARDS
+=========================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+    margin-top:50px;
+
+}
+
+.card{
+
+    background:#1d1d1d;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.card:hover{
+
+    transform:scale(1.05);
+
+    background:#ff5c93;
+
+}
+
+
+/* ===========================
+      LETTER
+=========================== */
+
+#letter{
+
+    text-align:center;
+
+}
+
+#letter button{
+
+    margin-top:30px;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ff5c93;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+#letter-box{
+
+    width:70%;
+
+    margin:auto;
+
+    margin-top:50px;
+
+    padding:40px;
+
+    background:white;
+
+    color:black;
+
+    border-radius:20px;
+
+    line-height:35px;
+
+}
+
+
+/* ===========================
+      SURPRISE
+=========================== */
+
+#surprise{
+
+    text-align:center;
+
+}
+
+#surprise button{
+
+    margin-top:30px;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ff5c93;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+#gift{
+
+    margin-top:60px;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    background:#1d1d1d;
+
+    border:2px solid #ff5c93;
+
+}
+
+
+/* ===========================
+      FLOATING HEARTS
+=========================== */
+
+.heart{
+
+    position:fixed;
+
+    color:#ff5c93;
+
+    animation:float 6s linear infinite;
+
+    pointer-events:none;
+
+}
+
+@keyframes float{
+
+    from{
+
+        transform:translateY(100vh);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:translateY(-120vh);
+
+        opacity:0;
+
+    }
+
+}
