@@ -93,7 +93,19 @@ let images=[
 
 "PIC 3.jpeg",
 
-"PIC 4.jpeg"
+"PIC 4.jpeg",
+
+"PIC 5.jpeg",
+
+"PIC 6.jpeg",
+
+"PIC 7.jpeg",
+
+"PIC 8.jpeg",
+
+"PIC 9.jpeg",
+
+"PIC 10.jpeg",
 
 ];
 
