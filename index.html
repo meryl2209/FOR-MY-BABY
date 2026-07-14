@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= LOADING SCREEN ================= -->
+
+<div id="loading-screen">
+
+    <h1>LOAING MEMORIES...</h1>
+
+    <div class="progress-bar">
+        <div id="progress"></div>
+    </div>
+
+    <p id="loading-text">0%</p>
+
+</div>
+
+<!-- ================= PASSWORD PAGE ================= -->
+
+<div id="password-page" class="hidden">
+
+    <h1>🔐 Access Required</h1>
+
+    <p>Only the Birthday Boy can enter ❤️</p>
+
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <br><br>
+
+    <button onclick="checkPassword()">Unlock ❤️</button>
+
+    <p id="wrong"></p>
+
+</div>
+
+<!-- ================= MAIN WEBSITE ================= -->
+
+<div id="main" class="hidden">
+
+<!-- HOME -->
+
+<section class="home">
+
+<h1>Happy Birthday ❤️</h1>
+
+<h2>To My Kuku</h2>
+
+<p>
+Welcome to your little corner of the internet.
+PRESS ON BEGIN TO BEGIN HEHEHE</p>
+
+<a href="#story">
+<button>LETS BEGIN HEHE(I PREPARED ALOT SHI) →</button>
+</a>
+
+</section>
+
+<!-- STORY -->
+
+<section id="story">
+
+<h1>📖 Our Story</h1>
+
+<div class="timeline">
+
+<div class="box">
+<h2>🌸 We Met</h2>
+<p>WE FIRST MET ON SNAPCHAT LIKE I NEVER EVEN IMAGINED US TO BECOME A THING LIKE BUT NOWW UR MY EVERYTHING I LOVE YOU SOO MUCH.</p>
+</div>
+
+<div class="box">
+<h2>💬 First Conversation</h2>
+<p>I STIL REMEMBER OUR FIRST CONVO W EACH OTHER LIKE U SENT ME THAT GRUP PIC IDK WHY BUT I JS HAD A GUT FEELING IT WAS YOU EHHEEHHE AND IT WAS AND IM SO GLAD I HAVE U FOREVER NOWW.</p>
+</div>
+
+<div class="box">
+<h2>❤️ Fell In Love</h2>
+<p>AFTER CONTINUOSLY TALKIN TO EACH OTHER WE BOTH FELL IN LOVE I WAS KINDA THE ONE WHO SAID IT OUR BROUGHT THE TOPIC I REMEBER U USED TO FLIRT WITH ME YOU USED TO CALL ME CUTE.</p>
+</div>
+
+<div class="box">
+<h2>🎂 Today</h2>
+<p>TODAY IS LIKE YOUR SPECIAL DAY WE HAVE BEEN TOGETHER SIMCE 1 AND A HALF YEAR IM CONFIDENT WE WILL LAST FOREVER.HAPPY BIRTHDAY MY CUTIEE ❤️❤️</p>
+</div>
+
+</div>
+<BR>
+<H1 ALIGN="CENTER">SCROLL DOWN</H1>
+
+</section id="galery">
+
+<!-- PHOTO GALLERY -->
+
+<section id="gallery">
+
+<h1>📸 Gallery</h1>
+
+<div class="slider">
+
+<img id="slide" src="PIC 1.jpeg">
+
+</div>
+
+<div class="buttons">
+
+<button onclick="previous()">Previous</button>
+
+<button onclick="next()">Next</button>
+
+</div>
+
+</section>
+
+<!-- REASONS -->
+
+<section id="reasons">
+
+<h1>❤️ 15 Reasons I Love You</h1>
+
+<div class="cards">
+
+<div class="card">1. You're my safe place.</div>
+<div class="card">2. Your smile.</div>
+<div class="card">3. You understand me.</div>
+<div class="card">4. You're adorable.</div>
+<div class="card">5. You make me laugh.</div>
+<div class="card">6. You support me.</div>
+<div class="card">7. Your voice.</div>
+<div class="card">8. Your hugs.</div>
+<div class="card">9. Your kindness.</div>
+<div class="card">10. Our memories.</div>
+<div class="card">11. Your personality.</div>
+<div class="card">12. You're always you.</div>
+<div class="card">13. I feel lucky.</div>
+<div class="card">14. You never fail to make my day.</div>
+<div class="card">15. Because you're you ❤️</div>
+
+</div>
+
+</section>
+
+<!-- LETTER -->
+
+<section id="letter">
+
+<h1>💌 Open Letter</h1>
+
+<button onclick="openLetter()">
+
+Open Letter ❤️
+
+</button>
+
+<div id="letter-box" class="hidden">
+
+<p>
+
+I Never imagined that one random day, one random conversation, would turn into the best chapter of my life. You came into my world so unexpectedly, yet now I can't imagine a single day without you. Thank you for making me laugh, comforting me when I'm down, listening to all my nonsense, and loving me in ways I never knew I needed. Every memory with you has become my favorite memory.
+
+Today is your day, but somehow I'm the lucky one because I get to love someone as amazing as you. No matter what happens in the future, I hope you always remember how deeply you are loved by me. I hope this year brings you endless happiness, success, and every dream your heart wishes for. And I hope I get to stand beside you through all of it.
+
+Thank you for being my safe place, my biggest smile, and my favorite person. I love you more than words could ever explain.
+
+Happy Birthday, MY LOVEE. 🤍
+Forever yours. ❤️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- FINAL SURPRISE -->
+
+<section id="surprise">
+
+<h1>🎁 Final Surprise</h1>
+
+<button onclick="surprise()">
+
+Open Your Gift
+
+</button>
+
+<div id="gift" class="hidden">
+
+<h2>🎉 HAPPY BIRTHDAY 🎉</h2>
+
+<p>
+
+Every line of code on this website
+
+was written thinking about you.
+
+I hope this made you smile.
+
+I love you.
+
+❤️
+
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
